@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sourcey.Seeker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".AppApplication"
+        android:allowBackup="true"
+        android:exported="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/launchicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- 錄音元件 -->
+        <activity
+            android:name=".MainScreen"
+            android:label="@string/title_activity_main_screen" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".CardShowCabinet"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ChooseType" />
+        <activity android:name=".PuzzlePhoto" />
+        <activity android:name=".CapsulePhoto" />
+        <activity android:name=".CapsuleSetting" />
+        <activity android:name=".BroadcastPhoto" />
+        <activity
+            android:name=".FriendScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".PuzzleSetting" />
+        <activity android:name=".WhisperPhoto" />
+        <activity android:name=".BroadcastSetting" />
+        <activity android:name=".WhisperSetting" />
+        <activity android:name=".ScanQRcode" />
+        <activity
+            android:name=".ChooseFriends"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name=".ChatRoom"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ChooseColor"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity android:name=".popularActivity" />
+        <activity android:name=".CallCamera" />
+        <activity
+            android:name=".Activity_Detail"
+            android:theme="@style/DetailTheme" />
+        <activity android:name=".ShowBroadcast" />
+        <activity android:name=".JoinHistory" />
+        <activity android:name=".AboutSeeker" />
+        <activity android:name=".SettingPassword" />
+        <activity android:name=".ShowHistory" />
+        <activity android:name=".Adjust" />
+        <activity android:name=".PersonalInformation" />
+        <activity android:name=".CapsuleSuccess" />
+        <activity android:name=".PuzzleSuccess" />
+        <activity android:name=".BroadcastSuccess" />
+        <activity android:name=".WhisperSuccess" />
+        <activity android:name=".PuzzleFailed" />
+        <activity android:name=".BroadcastFailed" />
+        <activity android:name=".CapsuleFailed" />
+        <activity android:name=".WhisperFailed" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Show_Capsule_Card" />
+        <activity android:name=".Show_Puzzle_Card" />
+        <activity android:name=".Show_Recieve_Card" />
+        <activity android:name=".Show_Send_Card" />
+        <activity android:name=".PlayVideo" />
+        <activity
+            android:name=".AddFriendScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Show_Capsule_Time"></activity>
+    </application>
+
+</manifest>

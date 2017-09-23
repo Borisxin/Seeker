@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "76990312176",
+    "firebase_url": "https://seeker-message.firebaseio.com",
+    "project_id": "seeker-message",
+    "storage_bucket": "seeker-message.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76990312176:android:dbc8cb6269fd0577",
+        "android_client_info": {
+          "package_name": "com.sourcey.Seeker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76990312176-oar60j94elp4peba06m87q96eshlklql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourcey.Seeker",
+            "certificate_hash": "69217f86dac288e42b7bca0a973ee34ee0543d14"
+          }
+        },
+        {
+          "client_id": "76990312176-0t8bouc3ndm5n3ni71rk3o117sg36ecp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHdCT8isFlWHlk_u0NWShVAtRHEPW9cbA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76990312176-0t8bouc3ndm5n3ni71rk3o117sg36ecp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

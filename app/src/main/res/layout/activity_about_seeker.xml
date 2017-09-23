@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final_qrcode_bac"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.sourcey.Seeker.AboutSeeker">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="    期望Seeker能為使用者留下當下的風景，並透過文字保留住當下的情感，或記下與家人、朋友、情人間的共同回憶，使得這些不會因為風景的轉變、時空的轉換而消逝。"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="     我們強調是以「地點」收藏回憶，並非傳統的以行動裝置儲存回憶；強調將回憶保存於原地，並非是隨身帶走的。真正能夠強烈感受的那一刻，是當我們再次回到人事已非的街景，而能藉由閱覽過去存在這裡的紀錄，觸發對於重要記憶的感動。 "
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+</LinearLayout>

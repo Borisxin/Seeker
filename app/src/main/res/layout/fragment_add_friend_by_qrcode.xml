@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.sourcey.Seeker.AddFriendByQRCode">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/qrCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="3"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/final_qrscanner"
+        android:text="開啟掃描" />
+
+    <ImageView
+        android:id="@+id/qrImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" />
+</LinearLayout>

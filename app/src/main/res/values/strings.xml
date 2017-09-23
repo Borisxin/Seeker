@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Seeker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_screen">Map</string>
+    <string-array name="mainscreen">
+        <item></item>
+        <item>好友</item>
+        <item>設定</item>
+        <item>登出</item>
+        <item>關於Seeker</item>
+    </string-array>
+    <string-array name="category">
+        <item>饕客推薦</item>
+        <item>私房景點</item>
+        <item>文青天地</item>
+        <item>好玩不騙</item>
+    </string-array>
+    <string name="title_record">語音備忘</string>
+    <string name="title_play">播放語音備忘</string>
+    <string name="record_play">播放</string>
+    <string name="record_new">重新錄製</string>
+    <string name="record_audio_denied">沒有錄音設備授權</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
